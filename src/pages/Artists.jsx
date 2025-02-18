@@ -1,5 +1,7 @@
+import Main from "../components/Main";
+
 const Artists = () => {
-  return <div></div>;
+  return <Main type="artists" />;
 };
 
 export default Artists;
