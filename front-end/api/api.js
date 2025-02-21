@@ -1,4 +1,3 @@
-import "dotenv/config";
 import axios from "axios";
 
 const URL = "https://spotify-react-deef.onrender.com/api";
