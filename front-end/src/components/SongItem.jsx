@@ -2,7 +2,11 @@ import { Link } from "react-router-dom";
 
 const SongItem = ({ image, name, duration, artist, audio, _id, index }) => {
   return (
-    <Link to={`/song/${_id}`} className="song-item">
+    <Link
+      to={`/song/${_id}`}
+      className="song-item"
+      aria-label={`Ir para a música ${name} de ${artist}`}
+    >
       <div className="song-item__number-album">
         <p>{index + 1}</p>
 
@@ -10,6 +14,7 @@ const SongItem = ({ image, name, duration, artist, audio, _id, index }) => {
           <img
             src={image}
             alt={`Imagem da Música ${name}`}
+            loading="lazy"
             className="song-item__image"
           />
           <p className="song-item__name">{name}</p>
